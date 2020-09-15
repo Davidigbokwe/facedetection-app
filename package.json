@@ -1,5 +1,6 @@
 {
   "name": "facerecognitionbrain",
+  "homepage": "https://DavidIgbokwe.github.io/smartBrain",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
