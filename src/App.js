@@ -49,7 +49,7 @@ class App extends React.Component {
 
 
 	componentDidMount(){
-		fetch('http://localhost:3000')
+		fetch('https://thawing-peak-76387.herokuapp.com/')
 		.then(response => response.json())
 		.then(console.log)
 	}
@@ -92,7 +92,7 @@ onInputChange = (event) =>{
 
  onButtonSubmit = () =>{
  	this.setState({imageUrl:this.state.input});
- 	fetch('http://localhost:3000/imageurl',{
+ 	fetch('https://thawing-peak-76387.herokuapp.com/imageurl',{
 		method: 'post',
 		headers:{'Content-Type': 'application/json'},
 		body:JSON.stringify({
@@ -102,7 +102,7 @@ onInputChange = (event) =>{
  	.then(response => response.json())
  	.then(response => {
  		if(response){
- 			fetch('http://localhost:3000/image',{
+ 			fetch('https://thawing-peak-76387.herokuapp.com/image',{
  				method: 'put',
 				headers:{'Content-Type': 'application/json'},
 				body:JSON.stringify({
